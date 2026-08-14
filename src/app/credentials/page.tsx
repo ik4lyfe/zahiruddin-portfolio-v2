@@ -31,7 +31,7 @@ export default function Credentials() {
       <div className="grid md:grid-cols-2 gap-6">
         {credentials.map((c, i) => (
           <Reveal key={c.name} delay={i * 50}>
-            <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24] h-full flex flex-col hover:shadow-md transition-shadow">
+            <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#12354f] h-full flex flex-col hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between gap-2 mb-3">
                 <h2 className="font-serif text-xl text-navy dark:text-gold">{c.name}</h2>
                 <span className={`text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm whitespace-nowrap ${

@@ -26,7 +26,7 @@ export default function Work() {
 
       {/* Hero case study — full width */}
       <Reveal>
-        <article className="grid md:grid-cols-2 gap-0 border border-gold dark:border-gold rounded-sm overflow-hidden mb-10 bg-surface dark:bg-[#1a1d24]">
+        <article className="grid md:grid-cols-2 gap-0 border border-gold dark:border-gold rounded-sm overflow-hidden mb-10 bg-surface dark:bg-[#12354f]">
           <div className="h-64 md:h-auto overflow-hidden">
             <img src={photos[0]} alt="" className="w-full h-full object-cover" />
           </div>
@@ -50,7 +50,7 @@ export default function Work() {
       <div className="space-y-10">
         {projects.slice(1).map((p, i) => (
           <Reveal key={p.title} delay={i * 60}>
-            <article className={`grid md:grid-cols-2 gap-6 items-center border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#1a1d24] hover:shadow-md transition-shadow ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
+            <article className={`grid md:grid-cols-2 gap-6 items-center border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#12354f] hover:shadow-md transition-shadow ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
               <div className="h-56 md:h-72 overflow-hidden [direction:ltr]">
                 <img src={photos[(i + 1) % photos.length]} alt="" className="w-full h-full object-cover" />
               </div>
@@ -75,7 +75,7 @@ export default function Work() {
       <div className="grid md:grid-cols-2 gap-6">
         {freelanceWork.map((f, i) => (
           <Reveal key={f.title} delay={i * 80}>
-            <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24] h-full hover:shadow-md transition-shadow">
+            <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#12354f] h-full hover:shadow-md transition-shadow">
               <div className="text-xs uppercase tracking-widest text-gold mb-2">{f.type}</div>
               <h3 className="font-serif text-xl text-navy dark:text-gold mb-2">{f.title}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{f.detail}</p>

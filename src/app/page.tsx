@@ -44,7 +44,7 @@ export default function Home() {
               director made it a standard.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/work" className="px-6 py-3 bg-navy dark:bg-gold text-white dark:text-[#121212] font-medium rounded-sm hover:opacity-90 transition-opacity">
+              <Link href="/work" className="px-6 py-3 bg-navy dark:bg-gold text-white dark:text-[#f5f5f5] font-medium rounded-sm hover:opacity-90 transition-opacity">
                 See the work
               </Link>
               <Link href="/contact" className="px-6 py-3 border border-line dark:border-gray-600 rounded-sm link-line text-gray-700 dark:text-gray-200">
@@ -90,7 +90,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6">
           {chapters.map((c, i) => (
             <Reveal key={c.title} delay={i * 60}>
-              <article className="border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#1a1d24] group hover:shadow-md transition-shadow">
+              <article className="border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#12354f] group hover:shadow-md transition-shadow">
                 <div className="h-40 overflow-hidden">
                   <img src={photos[i % photos.length]} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
@@ -110,7 +110,7 @@ export default function Home() {
       </section>
 
       {/* ═══ NUMBERS — marquee strip (Pearl numbers) ═══ */}
-      <section className="bg-navy dark:bg-[#1a1d24] py-16 overflow-hidden">
+      <section className="bg-navy dark:bg-[#12354f] py-16 overflow-hidden">
         <p className="text-center text-xs uppercase tracking-widest text-gray-400 mb-8">Numbers that tell the story</p>
         <div className="text-loop">
           {[...numbers, ...numbers].map((n, i) => (
@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* ═══ CULTURE — pull quote (Pearl culture) ═══ */}
-      <section className="bg-surface dark:bg-[#1a1d24] border-y border-line dark:border-gray-700 py-20">
+      <section className="bg-surface dark:bg-[#12354f] border-y border-line dark:border-gray-700 py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <Reveal>
             <p className="font-serif text-2xl md:text-3xl text-navy dark:text-gold leading-relaxed">
@@ -169,7 +169,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-6">
           {capabilities.map((c, i) => (
             <Reveal key={c.title} delay={i * 80}>
-              <div className="border border-line dark:border-gray-700 rounded-sm p-6 h-full bg-surface dark:bg-[#1a1d24] hover:shadow-md transition-shadow">
+              <div className="border border-line dark:border-gray-700 rounded-sm p-6 h-full bg-surface dark:bg-[#12354f] hover:shadow-md transition-shadow">
                 <div className="text-xs uppercase tracking-widest text-gold mb-3">0{i + 1}</div>
                 <h3 className="font-serif text-xl text-navy dark:text-gold mb-2">{c.title}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">{c.desc}</p>
@@ -188,7 +188,7 @@ export default function Home() {
               Open to operations roles — procurement, supply chain, logistics, planning. And freelance web development.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Link href="/contact" className="px-8 py-3 bg-navy dark:bg-gold text-white dark:text-[#121212] font-medium rounded-sm hover:opacity-90 transition-opacity">
+              <Link href="/contact" className="px-8 py-3 bg-navy dark:bg-gold text-white dark:text-[#f5f5f5] font-medium rounded-sm hover:opacity-90 transition-opacity">
                 Get in touch
               </Link>
               <Link href="/credentials" className="px-8 py-3 border border-line dark:border-gray-600 rounded-sm link-line text-gray-700 dark:text-gray-200">

@@ -48,7 +48,7 @@ export default function About() {
 
       <div className="mt-12 grid md:grid-cols-2 gap-4">
         <Reveal delay={100}>
-          <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24]">
+          <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#12354f]">
             <h2 className="font-serif text-xl text-navy dark:text-gold mb-3">How I work</h2>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
               <li>• Listen to the stakeholder first, then offer the better version</li>
@@ -59,7 +59,7 @@ export default function About() {
           </div>
         </Reveal>
         <Reveal delay={180}>
-          <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24]">
+          <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#12354f]">
             <h2 className="font-serif text-xl text-navy dark:text-gold mb-3">Beyond the job</h2>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
               <li>• Civil Defence (APM) reserve member since 2017</li>

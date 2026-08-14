@@ -67,7 +67,7 @@ export default function Career() {
       <div className="space-y-10">
         {stories.map((s, i) => (
           <Reveal key={s.year} delay={i * 60}>
-            <article className={`grid md:grid-cols-2 gap-6 items-center border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#1a1d24] hover:shadow-md transition-shadow ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
+            <article className={`grid md:grid-cols-2 gap-6 items-center border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#12354f] hover:shadow-md transition-shadow ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
               <div className="h-56 md:h-64 overflow-hidden [direction:ltr]">
                 <img src={photos[i % photos.length]} alt="" className="w-full h-full object-cover" />
               </div>

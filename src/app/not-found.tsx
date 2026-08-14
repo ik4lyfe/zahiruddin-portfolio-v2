@@ -10,7 +10,7 @@ export default function NotFound() {
       <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-md mx-auto">
         Like a process nobody documented. But don&apos;t worry — I know where everything is.
       </p>
-      <Link href="/" className="px-8 py-3 bg-navy dark:bg-gold text-white dark:text-[#121212] font-medium rounded-sm hover:opacity-90 transition-opacity">
+      <Link href="/" className="px-8 py-3 bg-navy dark:bg-gold text-white dark:text-[#f5f5f5] font-medium rounded-sm hover:opacity-90 transition-opacity">
         Back to home
       </Link>
     </div>

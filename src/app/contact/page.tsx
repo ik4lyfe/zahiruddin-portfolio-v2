@@ -37,13 +37,13 @@ export default function Contact() {
 
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         <Reveal>
-          <a href={`mailto:${site.email}`} className="block border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24] hover:shadow-md transition-shadow">
+          <a href={`mailto:${site.email}`} className="block border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#12354f] hover:shadow-md transition-shadow">
             <div className="text-xs uppercase tracking-widest text-gold mb-2">Email</div>
             <div className="font-medium text-navy dark:text-gold break-all">{site.email}</div>
           </a>
         </Reveal>
         <Reveal delay={80}>
-          <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24]">
+          <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#12354f]">
             <div className="text-xs uppercase tracking-widest text-gold mb-3">Socials</div>
             <div className="flex gap-4">
               <a href={site.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-2 rounded-full border border-line dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:text-navy dark:hover:text-gold hover:border-gold transition-colors">
@@ -61,7 +61,7 @@ export default function Contact() {
       </div>
 
       <Reveal>
-        <div className="border border-line dark:border-gray-700 rounded-sm p-8 bg-surface dark:bg-[#1a1d24]">
+        <div className="border border-line dark:border-gray-700 rounded-sm p-8 bg-surface dark:bg-[#12354f]">
           <h2 className="font-serif text-2xl text-navy dark:text-gold mb-6">Send a message</h2>
           <form
             action={`mailto:${site.email}`}
@@ -72,18 +72,18 @@ export default function Contact() {
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-sm text-gray-600 dark:text-gray-300 mb-1">Name</label>
-                <input id="name" name="name" required className="w-full px-3 py-2 border border-line dark:border-gray-600 rounded-sm bg-bg dark:bg-[#121212] text-ink focus:outline-none focus:border-gold" />
+                <input id="name" name="name" required className="w-full px-3 py-2 border border-line dark:border-gray-600 rounded-sm bg-bg dark:bg-[#0a2a40] text-ink focus:outline-none focus:border-gold" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm text-gray-600 dark:text-gray-300 mb-1">Email</label>
-                <input id="email" name="email" type="email" required className="w-full px-3 py-2 border border-line dark:border-gray-600 rounded-sm bg-bg dark:bg-[#121212] text-ink focus:outline-none focus:border-gold" />
+                <input id="email" name="email" type="email" required className="w-full px-3 py-2 border border-line dark:border-gray-600 rounded-sm bg-bg dark:bg-[#0a2a40] text-ink focus:outline-none focus:border-gold" />
               </div>
             </div>
             <div>
               <label htmlFor="message" className="block text-sm text-gray-600 dark:text-gray-300 mb-1">Message</label>
-              <textarea id="message" name="message" rows={5} required className="w-full px-3 py-2 border border-line dark:border-gray-600 rounded-sm bg-bg dark:bg-[#121212] text-ink focus:outline-none focus:border-gold resize-y" />
+              <textarea id="message" name="message" rows={5} required className="w-full px-3 py-2 border border-line dark:border-gray-600 rounded-sm bg-bg dark:bg-[#0a2a40] text-ink focus:outline-none focus:border-gold resize-y" />
             </div>
-            <button type="submit" className="px-6 py-3 bg-navy dark:bg-gold text-white dark:text-[#121212] font-medium rounded-sm hover:opacity-90 transition-opacity">
+            <button type="submit" className="px-6 py-3 bg-navy dark:bg-gold text-white dark:text-[#f5f5f5] font-medium rounded-sm hover:opacity-90 transition-opacity">
               Send message
             </button>
           </form>

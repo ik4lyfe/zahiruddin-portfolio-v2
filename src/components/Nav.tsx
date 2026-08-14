@@ -10,7 +10,7 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur border-b border-line dark:bg-[#121212]/80">
+    <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur border-b border-line dark:bg-[#0a2a40]/80">
       <nav className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="shrink-0 font-serif text-base sm:text-lg text-navy dark:text-gold" onClick={() => setOpen(false)}>
@@ -45,7 +45,7 @@ export default function Nav() {
         </div>
 
         {open && (
-          <div className="md:hidden absolute left-0 right-0 top-16 bg-surface dark:bg-[#1a1d24] border-b border-line shadow-lg z-50">
+          <div className="md:hidden absolute left-0 right-0 top-16 bg-surface dark:bg-[#12354f] border-b border-line shadow-lg z-50">
             {navLinks.map((l) => (
               <Link
                 key={l.href}
