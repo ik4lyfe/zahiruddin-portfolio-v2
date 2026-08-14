@@ -54,15 +54,26 @@ export const timeline = [
 ];
 
 export const credentials = [
-  { name: "CGMA FLP", org: "AICPA / CIMA", status: "On-going", note: "Management accounting — finance leadership path" },
-  { name: "Yellow Belt Lean Six Sigma", org: "Certified", status: "Complete", note: "Process improvement methodology" },
+  // ── Leadership & Management (OPS CORE) ──
+  { name: "BBA (Hons) Operations Management", org: "UiTM", status: "On-going", note: "CGPA 3.70 · First Class on track · finishing early (10→8 semesters)" },
+  { name: "CGMA FLP", org: "AICPA / CIMA", status: "On-going", note: "Management accounting — the numbers behind operations decisions" },
+  { name: "Lean Six Sigma Yellow Belt", org: "CSSC", status: "Complete", note: "Process improvement methodology — waste reduction, flow optimisation" },
+  { name: "Lean Six Sigma White Belt", org: "CSSC", status: "Complete", note: "Foundations of continuous improvement" },
+  { name: "Certificate of Global Leadership Excellence", org: "GSDC", status: "Complete", note: "Leadership, strategic management, change management" },
   { name: "Yayasan Peneraju Leadership Programme", org: "Yayasan Peneraju", status: "Complete", note: "National leadership programme" },
   { name: "New Leaders", org: "Melbourne Business School", status: "On-going", note: "1-month intensive leadership programme" },
-  { name: "NIP — National Investment Programme", org: "Yayasan Bursa Malaysia", status: "Complete", note: "Selected 550/5000+. Investment literacy" },
-  { name: "CHRO", org: "MIHRM", status: "Complete", note: "Certified Human Resource Officer" },
-  { name: "SHO NIOSH", org: "NIOSH", status: "Complete", note: "3 competency papers. Sponsored by PM's Department" },
-  { name: "Takaful Consultant", org: "In training", status: "On-going", note: "Passed TBE exam" },
-  { name: "BBA (Hons) Operations Management", org: "UiTM", status: "On-going", note: "CGPA 3.70 · First Class on track" },
+  { name: "CHRO — Certified Human Resource Officer", org: "MIHRM", status: "Complete", note: "People management, training & development" },
+  // ── Data-Driven Decision Making (OPS EVIDENCE) ──
+  { name: "Google Data Analytics Professional", org: "Google", status: "Complete", note: "Data-informed operations — decisions backed by numbers, not guesswork" },
+  { name: "Microsoft Power BI Data Analyst Associate", org: "Microsoft", status: "Complete", note: "Turn operational data into dashboards leadership actually uses" },
+  { name: "Professional Certificate in HR Management", org: "MIHRM", status: "Complete", note: "The Digital HR, training & development" },
+  // ── Compliance & Risk (EXPERIENCE PROOF — satu line je) ──
+  { name: "Registered Environmental Health Officer", org: "MAHPC (EHO)00841", status: "Complete", note: "Registered professional — compliance, risk, governance" },
+  { name: "SHO NIOSH", org: "NIOSH", status: "Complete", note: "3 competency papers · sponsored by PM's Department" },
+  { name: "OSH Coordinator", org: "Government of Malaysia", status: "Complete", note: "Certified compliance & risk coordinator" },
+  // ── Finance (ADDITIONAL SKILLSET) ──
+  { name: "NIP — National Investment Programme", org: "Yayasan Bursa Malaysia", status: "Complete", note: "Selected 550/5000+ — financial literacy as an owner thinks" },
+  { name: "Takaful Basic Examination", org: "IBFIM", status: "Complete", note: "Risk & insurance fundamentals" },
 ];
 
 export const projects = [

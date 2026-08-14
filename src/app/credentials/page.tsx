@@ -10,10 +10,11 @@ export default function Credentials() {
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
       <Reveal>
         <p className="text-xs uppercase tracking-widest text-gold mb-3">Credentials</p>
-        <h1 className="font-serif text-4xl md:text-5xl text-navy dark:text-gold mb-4">Proof, not promises</h1>
+        <h1 className="font-serif text-4xl md:text-5xl text-navy dark:text-gold mb-4">Built for operations</h1>
         <p className="text-gray-600 dark:text-gray-300 mb-16 max-w-2xl leading-relaxed">
-          Certs and programmes are just receipts. The real story is what I did with them — every one of these funded my
-          way of thinking, not my wall.
+          Operations management is the core — process improvement, leadership, people. Data analytics and finance are the
+          tools I bring to make operations decisions better. Every cert below earns its place by making me more useful to
+          an operations team.
         </p>
       </Reveal>
 
@@ -52,8 +53,7 @@ export default function Credentials() {
       <Reveal>
         <div className="mt-16 border-l-2 border-gold pl-6 max-w-2xl">
           <p className="font-serif text-xl md:text-2xl text-navy dark:text-gold leading-relaxed">
-            &ldquo;Every cert was someone&apos;s investment in me — UiTM, Bursa Malaysia, the PM&apos;s Department.
-            I plan to spend it well.&rdquo;
+            &ldquo;I studied operations so I could lead them. I studied data and finance so I could decide well.&rdquo;
           </p>
         </div>
       </Reveal>
