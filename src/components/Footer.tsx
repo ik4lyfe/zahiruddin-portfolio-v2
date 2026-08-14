@@ -11,12 +11,6 @@ export default function Footer() {
           <a href={site.github} target="_blank" rel="noopener noreferrer" className="link-line">GitHub</a>
           <a href={`mailto:${site.email}`} className="link-line">Email</a>
         </div>
-        <div>
-          Powered by{' '}
-          <a href="https://zahiruddinzaki.my" target="_blank" rel="noopener noreferrer" className="text-navy dark:text-gold link-line">
-            Zahiruddin Zaki
-          </a>
-        </div>
       </div>
     </footer>
   );
