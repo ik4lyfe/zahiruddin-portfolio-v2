@@ -48,8 +48,8 @@ body { background: var(--bg); color: var(--ink); transition: background-color 0.
 .link-line:hover::after { transform: scaleX(1); }
 
 /* ── Pearl text loop marquee (memories header / CTA) ── */
-@keyframes text-loop-animation { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-.text-loop { display: flex; width: max-content; animation: text-loop-animation 20s linear infinite; }
+@keyframes text-loop-animation { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.text-loop { display: flex; width: max-content; animation: text-loop-animation 30s linear infinite; }
 
 /* ── Pearl photo marquee rows (memories) ── */
 @keyframes slide_move { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
