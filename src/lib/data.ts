@@ -1,7 +1,8 @@
 export const site = {
-  name: "Zahiruddin Zaki",
+  name: "Muhammad Zahiruddin bin Zaki",
   short: "ZZ",
   tagline: "Built on operations. Led by purpose.",
+  postNominal: "CHRO, MMIHRM",
   email: "zahey97@gmail.com",
   linkedin: "https://linkedin.com/in/zahiruddin-zaki",
   github: "https://github.com/ik4lyfe",

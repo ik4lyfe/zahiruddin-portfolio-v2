@@ -39,8 +39,9 @@ export default function Home() {
               <span className="text-gray-400 dark:text-gray-500">The people behind it.</span>
             </h1>
             <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-md leading-relaxed">
-              I&apos;m {site.name}. For five years I&apos;ve been fixing the small things — the forms, the reports, the
-              processes nobody had time to question. Then the director made it a standard.
+              I&apos;m {site.name}, <span className="whitespace-nowrap">{site.postNominal}</span>. For five years I&apos;ve
+              been fixing the small things — the forms, the reports, the processes nobody had time to question. Then the
+              director made it a standard.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/work" className="px-6 py-3 bg-navy dark:bg-gold text-white dark:text-[#121212] font-medium rounded-sm hover:opacity-90 transition-opacity">

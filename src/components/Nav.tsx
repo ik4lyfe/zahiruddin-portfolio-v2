@@ -13,7 +13,7 @@ export default function Nav() {
     <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur border-b border-line dark:bg-[#121212]/80">
       <nav className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="shrink-0 font-serif text-lg text-navy dark:text-gold" onClick={() => setOpen(false)}>
+          <Link href="/" className="shrink-0 font-serif text-base sm:text-lg text-navy dark:text-gold truncate" onClick={() => setOpen(false)}>
             {site.name}
           </Link>
 
