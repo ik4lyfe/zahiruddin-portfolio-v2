@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
+import { LinkedInIcon, GitHubIcon, MailIcon } from "@/components/icons";
 import { site } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Contact" };
@@ -44,9 +45,16 @@ export default function Contact() {
         <Reveal delay={80}>
           <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24]">
             <div className="text-xs uppercase tracking-widest text-gold mb-3">Socials</div>
-            <div className="flex gap-6">
-              <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="link-line text-navy dark:text-gold font-medium">LinkedIn</a>
-              <a href={site.github} target="_blank" rel="noopener noreferrer" className="link-line text-navy dark:text-gold font-medium">GitHub</a>
+            <div className="flex gap-4">
+              <a href={site.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-2 rounded-full border border-line dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:text-navy dark:hover:text-gold hover:border-gold transition-colors">
+                <LinkedInIcon />
+              </a>
+              <a href={site.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="p-2 rounded-full border border-line dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:text-navy dark:hover:text-gold hover:border-gold transition-colors">
+                <GitHubIcon />
+              </a>
+              <a href={`mailto:${site.email}`} aria-label="Email" className="p-2 rounded-full border border-line dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:text-navy dark:hover:text-gold hover:border-gold transition-colors">
+                <MailIcon />
+              </a>
             </div>
           </div>
         </Reveal>
