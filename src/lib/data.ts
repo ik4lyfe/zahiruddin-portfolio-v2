@@ -1,5 +1,6 @@
 export const site = {
   name: "Muhammad Zahiruddin bin Zaki",
+  shortName: "Zahiruddin Zaki",
   short: "ZZ",
   tagline: "Built on operations. Led by purpose.",
   postNominal: "CHRO, MMIHRM",
