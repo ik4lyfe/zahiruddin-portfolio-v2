@@ -11,26 +11,28 @@ export default function Credentials() {
       <Reveal>
         <p className="text-xs uppercase tracking-widest text-gold mb-3">Credentials</p>
         <h1 className="font-serif text-4xl md:text-5xl text-navy dark:text-gold mb-4">Proof, not promises</h1>
-        <p className="text-gray-600 dark:text-gray-300 mb-12 max-w-2xl">
-          Certifications, programmes, and numbers that back the story. Selected for operations, finance, and leadership
-          positioning.
+        <p className="text-gray-600 dark:text-gray-300 mb-16 max-w-2xl leading-relaxed">
+          Certs and programmes are just receipts. The real story is what I did with them — every one of these funded my
+          way of thinking, not my wall.
         </p>
       </Reveal>
 
+      {/* numbers */}
       <Reveal>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
           {numbers.map((n) => (
             <Counter key={n.label} value={n.value} prefix={n.prefix} suffix={n.suffix} decimals={n.decimals || 0} label={n.label} />
           ))}
         </div>
       </Reveal>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* certs — warm cards */}
+      <div className="grid md:grid-cols-2 gap-6">
         {credentials.map((c, i) => (
-          <Reveal key={c.name} delay={i * 60}>
+          <Reveal key={c.name} delay={i * 50}>
             <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24] h-full flex flex-col hover:shadow-md transition-shadow">
-              <div className="flex items-start justify-between gap-2 mb-2">
-                <h3 className="font-serif text-lg text-navy dark:text-gold">{c.name}</h3>
+              <div className="flex items-start justify-between gap-2 mb-3">
+                <h2 className="font-serif text-xl text-navy dark:text-gold">{c.name}</h2>
                 <span className={`text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm whitespace-nowrap ${
                   c.status === "Complete"
                     ? "bg-gold/20 text-gold"
@@ -39,12 +41,22 @@ export default function Credentials() {
                   {c.status}
                 </span>
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">{c.org}</div>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-auto">{c.note}</p>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mb-3">{c.org}</div>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-auto leading-relaxed">{c.note}</p>
             </div>
           </Reveal>
         ))}
       </div>
+
+      {/* warm close */}
+      <Reveal>
+        <div className="mt-16 border-l-2 border-gold pl-6 max-w-2xl">
+          <p className="font-serif text-xl md:text-2xl text-navy dark:text-gold leading-relaxed">
+            &ldquo;Every cert was someone&apos;s investment in me — UiTM, Bursa Malaysia, the PM&apos;s Department.
+            I plan to spend it well.&rdquo;
+          </p>
+        </div>
+      </Reveal>
     </div>
   );
 }

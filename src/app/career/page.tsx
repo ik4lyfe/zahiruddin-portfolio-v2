@@ -4,36 +4,82 @@ import { timeline } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Career" };
 
+const photos = [
+  "/photos/p0c3e.jpg",
+  "/photos/p36cb.jpg",
+  "/photos/p4486.jpg",
+  "/photos/pc1dc.jpg",
+  "/photos/pc84e.jpg",
+  "/photos/pd0de.jpg",
+];
+
+const stories = [
+  {
+    year: "2017",
+    title: "APM — Civil Defence",
+    desc: "I joined as a reserve member. What started as community service became discipline — showing up, staying ready, leading when asked.",
+    tag: "#Discipline #Service",
+  },
+  {
+    year: "2020",
+    title: "KKM — Ministry of Health",
+    desc: "A contract officer during COVID. The pressure taught me what I can carry. I left seeking growth — not fleeing.",
+    tag: "#Pressure #Growth",
+  },
+  {
+    year: "2021",
+    title: "UiTM — Environmental Health Officer",
+    desc: "Five years of continuous improvement. Policies changed, processes fixed, systems built — until they became standards.",
+    tag: "#Improvement #Standards",
+  },
+  {
+    year: "2024",
+    title: "Vice Chancellor Special Project",
+    desc: "Selected 25 out of 100 applicants nationwide. Fully sponsored by UiTM. This opened the door to HR — MIHRM, CHRO.",
+    tag: "#Selected #Sponsored",
+  },
+  {
+    year: "2026",
+    title: "BBA Ops Management — Final Stretch",
+    desc: "CGPA 3.70, on track for First Class. Finishing 10 semesters in 8 — without dropping the grades. That's the work ethic.",
+    tag: "#Discipline #Efficiency",
+  },
+  {
+    year: "2027",
+    title: "Graduation & Transition",
+    desc: "The degree completes. The next chapter: operations management — procurement, supply chain, logistics, planning.",
+    tag: "#NextChapter #Operations",
+  },
+];
+
 export default function Career() {
   return (
-    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-16">
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-16">
       <Reveal>
         <p className="text-xs uppercase tracking-widest text-gold mb-3">Career</p>
         <h1 className="font-serif text-4xl md:text-5xl text-navy dark:text-gold mb-4">A journey of continuous improvement</h1>
-        <p className="text-gray-600 dark:text-gray-300 mb-12 max-w-2xl">
-          Every chapter — from field officer to operations student to freelance builder — added a layer. The thread is the
-          same: I see broken processes and I fix them.
+        <p className="text-gray-600 dark:text-gray-300 mb-16 max-w-2xl leading-relaxed">
+          Every chapter added a layer — field officer, operations student, freelance builder. The thread is the same:
+          I see broken processes, and I fix them.
         </p>
       </Reveal>
 
-      <div className="relative">
-        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-line dark:bg-gray-700" />
-        <div className="space-y-12">
-          {timeline.map((t, i) => (
-            <Reveal key={t.year} delay={i * 60}>
-              <div className={`relative flex gap-6 md:gap-0 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
-                <div className="absolute left-4 md:left-1/2 w-2 h-2 rounded-full bg-gold -translate-x-1/2 mt-2" />
-                <div className={`pl-12 md:pl-0 md:w-1/2 ${i % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}>
-                  <div className="border border-line dark:border-gray-700 rounded-sm p-6 bg-surface dark:bg-[#1a1d24] hover:shadow-md transition-shadow">
-                    <div className="text-xs uppercase tracking-widest text-gold mb-1">{t.year}</div>
-                    <h3 className="font-serif text-xl text-navy dark:text-gold mb-2">{t.title}</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">{t.desc}</p>
-                  </div>
-                </div>
+      <div className="space-y-10">
+        {stories.map((s, i) => (
+          <Reveal key={s.year} delay={i * 60}>
+            <article className={`grid md:grid-cols-2 gap-6 items-center border border-line dark:border-gray-700 rounded-sm overflow-hidden bg-surface dark:bg-[#1a1d24] hover:shadow-md transition-shadow ${i % 2 === 1 ? "md:[direction:rtl]" : ""}`}>
+              <div className="h-56 md:h-64 overflow-hidden [direction:ltr]">
+                <img src={photos[i % photos.length]} alt="" className="w-full h-full object-cover" />
               </div>
-            </Reveal>
-          ))}
-        </div>
+              <div className="p-6 md:p-8 [direction:ltr]">
+                <div className="text-xs uppercase tracking-widest text-gold mb-2">{s.year}</div>
+                <h2 className="font-serif text-2xl text-navy dark:text-gold mb-3">{s.title}</h2>
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">{s.desc}</p>
+                <div className="text-xs text-gold">{s.tag}</div>
+              </div>
+            </article>
+          </Reveal>
+        ))}
       </div>
     </div>
   );

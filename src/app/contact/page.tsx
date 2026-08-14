@@ -4,16 +4,34 @@ import { site } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Contact" };
 
+const photos = [
+  "/photos/p0c3e.jpg",
+  "/photos/p36cb.jpg",
+  "/photos/p4486.jpg",
+  "/photos/pc1dc.jpg",
+  "/photos/pc84e.jpg",
+  "/photos/pd0de.jpg",
+];
+
 export default function Contact() {
   return (
-    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-16">
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-16">
       <Reveal>
         <p className="text-xs uppercase tracking-widest text-gold mb-3">Contact</p>
         <h1 className="font-serif text-4xl md:text-5xl text-navy dark:text-gold mb-4">Let&apos;s talk.</h1>
-        <p className="text-gray-600 dark:text-gray-300 mb-12 max-w-xl">
-          Open to operations roles — procurement, supply chain, logistics, planning. Also taking freelance web development
-          projects. Reach out, I usually reply within a day.
+        <p className="text-gray-600 dark:text-gray-300 mb-12 max-w-xl leading-relaxed">
+          Open to operations roles — procurement, supply chain, logistics, planning. Also taking freelance web
+          development projects. I usually reply within a day.
         </p>
+      </Reveal>
+
+      {/* photo strip — warmth */}
+      <Reveal>
+        <div className="grid grid-cols-7 gap-2 mb-12">
+          {photos.map((p, i) => (
+            <img key={i} src={p} alt="" className="aspect-square object-cover rounded-sm" />
+          ))}
+        </div>
       </Reveal>
 
       <div className="grid md:grid-cols-2 gap-6 mb-12">
