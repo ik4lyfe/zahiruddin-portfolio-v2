@@ -55,7 +55,7 @@ export const timeline = [
 
 export const credentials = [
   // ── Leadership & Management (OPS CORE) ──
-  { name: "BBA (Hons) Operations Management", org: "UiTM", status: "On-going", note: "CGPA 3.70 · First Class on track · finishing early (10→8 semesters)" },
+  { name: "BBA (Hons) Operations Management", org: "UiTM", status: "On-going", note: "CGPA 3.70 · Dean's List every semester · finishing early (10→8 semesters)" },
   { name: "CGMA FLP", org: "AICPA / CIMA", status: "On-going", note: "Management accounting — the numbers behind operations decisions" },
   { name: "Lean Six Sigma Yellow Belt", org: "CSSC", status: "Complete", note: "Process improvement methodology — waste reduction, flow optimisation" },
   { name: "Lean Six Sigma White Belt", org: "CSSC", status: "Complete", note: "Foundations of continuous improvement" },

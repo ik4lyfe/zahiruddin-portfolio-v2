@@ -5,7 +5,7 @@
 
 ## Education
 
-- **BBA (Hons) Operations Management** — UiTM. On-going part time, CGPA 3.70, next year graduate. 10 sem → 8 sem (habis awal). Berpotensi First Class + Anugerah Naib Canselor.
+- **BBA (Hons) Operations Management** — UiTM. On-going part time, CGPA 3.70, next year graduate. 10 sem → 8 sem (habis awal). **Dean's List SETIAP sem** (konsisten, bukan sekali). Berpotensi First Class + Anugerah Naib Canselor.
 - Recce MBA part time.
 
 ## Certs — Leadership & Management (OPS CORE)
