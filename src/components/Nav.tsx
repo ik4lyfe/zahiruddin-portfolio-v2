@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { navLinks, site } from '@/lib/data';
+import { navLinks } from '@/lib/data';
 import ThemeToggle from './ThemeToggle';
 
 export default function Nav() {
@@ -13,8 +13,13 @@ export default function Nav() {
     <header className="sticky top-0 z-50 bg-bg/80 backdrop-blur border-b border-line dark:bg-[#0a2a40]/80">
       <nav className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="shrink-0 font-serif text-base sm:text-lg text-navy dark:text-gold" onClick={() => setOpen(false)}>
-            {site.shortName}
+          <Link href="/" className="shrink-0 flex items-center" onClick={() => setOpen(false)} aria-label="Zahiruddin Zaki — Home">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="Zahiruddin Zaki logo"
+              className="h-9 w-9 rounded-full object-cover"
+            />
           </Link>
 
           {/* Desktop */}
