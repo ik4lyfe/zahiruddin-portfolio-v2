@@ -4,7 +4,7 @@ import { capabilities, chapters, numbers, site } from "@/lib/data";
 
 const photos = [
   "/photos/hero-workshop.jpg",
-  "/photos/p36cb.jpg",
+  "/photos/fieldwork-eho.jpg",
   "/photos/apm-flood.jpg",
   "/photos/dashboard-actual.png",
   "/photos/pc84e.jpg",
