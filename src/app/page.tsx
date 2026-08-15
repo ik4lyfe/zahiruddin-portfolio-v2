@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import { capabilities, chapters, numbers, site } from "@/lib/data";
 
 const photos = [
-  "/photos/p0c3e.jpg",
+  "/photos/hero-workshop.jpg",
   "/photos/p36cb.jpg",
   "/photos/p4486.jpg",
   "/photos/pc1dc.jpg",
