@@ -9,6 +9,7 @@ const baskerville = Baskervville({ weight: ["400"], subsets: ["latin"], variable
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://zahiruddinzaki.my"),
   title: {
     default: `${site.name} | Operations Professional`,
     template: `%s | ${site.name}`,
