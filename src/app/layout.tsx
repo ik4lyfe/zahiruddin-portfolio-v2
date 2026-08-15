@@ -10,13 +10,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name} — Operations Professional`,
-    template: `%s — ${site.name}`,
+    default: `${site.name} | Operations Professional`,
+    template: `%s | ${site.name}`,
   },
   description:
-    "Zahiruddin Zaki — operations professional with a technical background. Process improvement, finance, and digital transformation. Built on operations. Led by purpose.",
+    "Zahiruddin Zaki | operations professional with a technical background. Process improvement, finance, and digital transformation. Built on operations. Led by purpose.",
   openGraph: {
-    title: `${site.name} — Operations Professional`,
+    title: `${site.name} | Operations Professional`,
     description: "Built on operations. Led by purpose.",
     url: site.domain,
     siteName: site.name,
