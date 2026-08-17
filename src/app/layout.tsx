@@ -34,6 +34,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `try{const t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark');}catch(e){}`,
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: site.name,
+              url: site.domain,
+              jobTitle: "Assistant Environmental Health Officer",
+              sameAs: ["https://linkedin.com/in/zahiruddin-zaki", "https://github.com/ik4lyfe"],
+              knowsAbout: ["Operations Management", "Environmental Health", "Occupational Safety", "Finance", "Digital Transformation"],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: site.name,
+              url: site.domain,
+            }),
+          }}
+        />
       </head>
       <body className={`${baskerville.variable} ${inter.variable} font-sans min-h-screen flex flex-col bg-bg text-ink`}>
         <Nav />
