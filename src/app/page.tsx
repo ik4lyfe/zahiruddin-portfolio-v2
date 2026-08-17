@@ -115,7 +115,7 @@ export default function Home() {
         <div className="text-loop">
           {[...numbers, ...numbers].map((n, i) => (
             <div key={i} className="flex items-baseline gap-4 whitespace-nowrap px-8">
-              <span className="font-serif text-4xl text-gold">{n.prefix}{n.value}{n.suffix}</span>
+              <span className="font-serif text-4xl text-[#f59e0b]">{n.prefix}{n.value}{n.suffix}</span>
               <span className="text-sm text-gray-300 max-w-[180px]">{n.label}</span>
             </div>
           ))}
