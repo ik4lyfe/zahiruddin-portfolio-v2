@@ -18,10 +18,12 @@ export const metadata: Metadata = {
     "Zahiruddin Zaki — operations professional. Process improvement, finance, digital transformation. Built on operations. Led by purpose.",
   openGraph: {
     title: `${site.name} | Operations Professional`,
-    description: "Built on operations. Led by purpose.",
+    description:
+      "Operations professional with a technical background — process improvement, finance, digital transformation. Built on operations. Led by purpose.",
     siteName: site.name,
     locale: "en_US",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Zahiruddin Zaki — Operations Professional" }],
   },
 };
 
