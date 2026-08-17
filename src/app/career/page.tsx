@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import { timeline } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Career", alternates: { canonical: "/career" } };
+export const metadata: Metadata = { title: "Career", alternates: { canonical: "/career" }, openGraph: { url: "https://zahiruddinzaki.my/career" } };
 
 const photos = [
   "/photos/p0c3e.jpg",

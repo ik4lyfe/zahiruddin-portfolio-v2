@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import { site } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Journal", alternates: { canonical: "/journal" } };
+export const metadata: Metadata = { title: "Journal", alternates: { canonical: "/journal" }, openGraph: { url: "https://zahiruddinzaki.my/journal" } };
 
 const photos = [
   "/photos/p0c3e.jpg",

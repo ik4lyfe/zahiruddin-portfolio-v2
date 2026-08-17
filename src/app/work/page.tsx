@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import { freelanceWork, projects } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Work", alternates: { canonical: "/work" } };
+export const metadata: Metadata = { title: "Work", alternates: { canonical: "/work" }, openGraph: { url: "https://zahiruddinzaki.my/work" } };
 
 const photos = [
   "/photos/p0c3e.jpg",

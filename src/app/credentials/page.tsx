@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
 import { credentials, numbers } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Credentials", alternates: { canonical: "/credentials" } };
+export const metadata: Metadata = { title: "Credentials", alternates: { canonical: "/credentials" }, openGraph: { url: "https://zahiruddinzaki.my/credentials" } };
 
 export default function Credentials() {
   return (
