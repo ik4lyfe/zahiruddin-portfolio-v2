@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import { LinkedInIcon, GitHubIcon, MailIcon } from "@/components/icons";
 import { site } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Contact" };
+export const metadata: Metadata = { title: "Contact", alternates: { canonical: "/contact" } };
 
 const photos = [
   "/photos/p0c3e.jpg",

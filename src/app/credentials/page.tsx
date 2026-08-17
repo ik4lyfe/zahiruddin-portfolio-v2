@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
 import { credentials, numbers } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Credentials" };
+export const metadata: Metadata = { title: "Credentials", alternates: { canonical: "/credentials" } };
 
 export default function Credentials() {
   return (

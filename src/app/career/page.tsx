@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
 import { timeline } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Career" };
+export const metadata: Metadata = { title: "Career", alternates: { canonical: "/career" } };
 
 const photos = [
   "/photos/p0c3e.jpg",

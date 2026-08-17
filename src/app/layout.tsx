@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${site.name} | Operations Professional`,
     description: "Built on operations. Led by purpose.",
-    url: site.domain,
     siteName: site.name,
     locale: "en_US",
     type: "website",
