@@ -7,7 +7,7 @@
   --color-surface: #ffffff;
   --color-ink: #1a2a3a;
   --color-navy: #104060;
-  --color-gold: #e8762c;
+  --color-gold: #b45309; /* amber-700 — contrast 4.66:1 on light bg (WCAG AA) */
   --color-line: #d0e0f0;
   --color-terra: #e35d3c;
 
@@ -20,7 +20,7 @@
   --surface: #ffffff;
   --ink: #1a2a3a;
   --primary: #104060;
-  --accent: #e8762c;
+  --accent: #b45309;
   --border: #d0e0f0;
 }
 
@@ -31,6 +31,7 @@
   --primary: #90c0e0;
   --accent: #5ba3c6;
   --border: #1d4460;
+  --color-gold: #e8762c; /* bright gold on dark — high contrast */
 }
 
 html { scroll-behavior: smooth; }
