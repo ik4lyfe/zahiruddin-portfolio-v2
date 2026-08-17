@@ -23,7 +23,7 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-3">
               <img src={photos[0]} alt="work" className="hero-img col-span-2 aspect-[4/3] object-cover rounded-sm" />
               <img src={photos[1]} alt="work" className="hero-img aspect-[4/3] object-cover rounded-sm mt-8" />
-              <img src={photos[2]} alt="work" className="hero-img aspect-[3/4] object-cover object-center scale-110 rounded-sm -mt-24 -ml-4 z-0" />
+              <img src={photos[2]} alt="work" className="hero-img aspect-[3/4] object-cover object-[65%_65%] scale-110 rounded-sm -mt-20 ml-8 z-0" />
               <img src={photos[3]} alt="work" className="hero-img col-span-2 aspect-[4/3] object-cover rounded-sm relative z-10" />
             </div>
             <div className="absolute -bottom-4 -right-2 md:-right-6 rotate-2 bg-gold text-navy font-serif text-lg px-4 py-2 rounded-sm shadow-lg">
