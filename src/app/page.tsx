@@ -21,10 +21,10 @@ export default function Home() {
           {/* collage — Pearl home_fv--imgs (2 panel, gambar berselerak) */}
           <div className="relative order-2 md:order-1">
             <div className="grid grid-cols-3 gap-3">
-              <img src={photos[0]} alt="work" className="hero-img col-span-2 aspect-[4/3] object-cover rounded-sm relative z-20" />
+              <img src={photos[0]} alt="work" className="hero-img col-span-2 aspect-[4/3] object-cover rounded-sm" />
               <img src={photos[1]} alt="work" className="hero-img aspect-[4/3] object-cover rounded-sm mt-8" />
-              <img src={photos[2]} alt="work" className="hero-img aspect-[3/4] object-cover object-[85%_65%] scale-125 rounded-sm -mt-6 ml-8 relative z-10" />
-              <img src={photos[3]} alt="work" className="hero-img col-span-2 aspect-[4/3] object-cover rounded-sm relative z-0 -ml-24" />
+              <img src={photos[2]} alt="work" className="hero-img aspect-[3/4] object-cover object-[85%_65%] scale-125 rounded-sm -mt-6 ml-8 z-0" />
+              <img src={photos[3]} alt="work" className="hero-img col-span-2 aspect-[4/3] object-cover rounded-sm relative z-10" />
             </div>
             <div className="absolute -bottom-4 -right-2 md:-right-6 rotate-2 bg-gold text-navy font-serif text-lg px-4 py-2 rounded-sm shadow-lg">
               5 years · public health
@@ -129,7 +129,7 @@ export default function Home() {
             <p className="font-serif text-2xl text-navy dark:text-gold">Why do I do all this?</p>
           </Reveal>
           <Reveal>
-            <p>My director once said: “I want a big map like they have at the police station. Pin every food premise, pull strings, update by hand.”</p>
+            <p className="italic">My director once said: “I want a big map like they have at the police station. Pin every food premise, pull strings, update by hand.”</p>
           </Reveal>
           <Reveal>
             <p>I listened. Then I showed him a dashboard — data connects itself, reports generate, updates in real time. No strings.</p>
